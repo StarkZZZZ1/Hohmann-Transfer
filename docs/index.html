@@ -7,5 +7,11 @@
 <body>
   <h1>TO THE MOON</h1>
   <p>Hohmann transfer launch planner. Work in progress.</p>
+  <script type="module">
+  import * as P from "./js/physics.js";
+  console.log(P.circularVelocity(P.MU_EARTH, P.R_EARTH + 400)); // ~7.67
+  console.log(P.getFuel(1000, 300, 3.0));                       // ~1771
+  console.log(P.cross([1, 0, 0], [0, 1, 0]));                   // [0, 0, 1]
+</script>
 </body>
 </html>
